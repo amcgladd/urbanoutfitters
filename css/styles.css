@@ -3,20 +3,26 @@
   flex-direction: row;
   flex-wrap: wrap;
   padding: 3%;
+  max-width: 1420px;
+  margin: auto;
+}
+
+#header-outside {
+  width: 100%;
+  border-bottom: 1px solid #e2e2e2;
 }
 
 #header {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  width: 100%;
   justify-content: space-between;
-  padding-left: 3%;
-  padding-right: 3%;
   box-sizing: border-box;
   height: 47px;
   font-family: "Montserrat", sans-serif;
-  border-bottom: 1px solid #e2e2e2;
+  font-size: 9pt;
+  max-width: 1420px;
+  margin: auto;
 }
 
 #head1 {
@@ -29,10 +35,15 @@
   height: 17px;
 }
 
+.fas {
+  color: #aeaeaf;
+  margin-right: 5px;
+}
+
 #head2 {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  align-items: center;
 }
 #head2 li {
   display: inline;
@@ -43,7 +54,26 @@
 }
 
 #head3 {
+  width: 200px;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   padding-right: 10px;
+}
+#head3 input {
+  font-size: 9pt;
+  border: none;
+  border-bottom: 1px solid #aeaeaf;
+  width: 100px;
+}
+
+#logo2, .narrow-pic {
+  display: none;
+}
+
+.special {
+  color: red;
 }
 
 .head {
@@ -108,8 +138,10 @@
   opacity: 1;
 }
 
-#two {
-  background-image: url("../img/frog.jpg");
+@media only screen and (max-width: 770px) {
+  .small-card, .big-card {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
