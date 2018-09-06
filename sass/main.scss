@@ -1,0 +1,115 @@
+#container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 3%;
+}
+
+#header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: space-between;
+  padding-left: 3%;
+  padding-right: 3%;
+  box-sizing: border-box;
+  height: 47px;
+  font-family: "Montserrat", sans-serif;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+#head1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 10px;
+  img {
+    height: 17px;
+  }
+}
+
+#head2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  li {
+    display: inline;
+    margin-left: 10px;
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}
+
+#head3 {
+  padding-right: 10px;
+}
+
+.head {
+  display: flex;
+  box-sizing: border-box;
+  height: 30px;
+}
+
+.big-card {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+  box-sizing: border-box;
+  position: relative;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.small-card {
+  display: flex;
+  flex-direction: column;
+  width: (100% / 3);
+  align-items: center;
+  box-sizing: border-box;
+  position: relative;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.banner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  box-sizing: border-box;
+  position: relative;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.big-card img, .small-card img, .banner img {
+  width: 100%;
+    &:hover {
+      opacity: 0.8;
+  }
+}
+
+.big-card button, .small-card button {
+  border: none;
+  opacity: 0.9;
+  position: absolute;
+  bottom: 24px;
+  padding: 8px 25px 7px 25px;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+    &:hover {
+      opacity: 1;
+  }
+}
+
+#two {
+  background-image: url("../img/frog.jpg");
+}
+
+// * {
+// border: 1px solid red;
+// }
